@@ -13,6 +13,8 @@ A Credit Card validator system - built with react, typescript, bootstrap, sass, 
 
 ### Live site
 
+`https://rank-assessment.vercel.app/`
+
 ### Installation
 
 To run the Credit Card application, follow these steps:
