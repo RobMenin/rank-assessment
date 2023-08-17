@@ -98,12 +98,12 @@ export default function CardForm(props: CardFormProps) {
       alert("Sorry! This country exists in a list of banned countries.");
     } else if (
       duplicateCard &&
-      duplicateCard.id !== selectedCreditCard.id // Exclude the currently edited card
+      duplicateCard.id !== selectedCreditCard.id 
     ) {
       alert("A card with the same number already exists.");
     } else if (!isFormHasErrors()) {
       const currentYear = new Date().getFullYear();
-      const currentMonth = new Date().getMonth() + 1; // Months are zero-indexed
+      const currentMonth = new Date().getMonth() + 1; 
 
       const selectedYear = parseInt(selectedCreditCard.cardYear, 10);
       const selectedMonth = parseInt(selectedCreditCard.cardMonth, 10);
@@ -134,7 +134,7 @@ export default function CardForm(props: CardFormProps) {
       cardYear: "",
       cardCvv: "",
     };
-    // validate blank fields
+
     let isErrorFlag = false;
     Object.keys(newErrors).forEach(function (key: any) {
       const keyPair = key as keyof CreditCard;
@@ -151,7 +151,7 @@ export default function CardForm(props: CardFormProps) {
       setErrors(newErrors);
       return isErrorFlag;
     }
-    //if no blank field then check other validation
+
     if (selectedCreditCard["cardNumber"].length !== 16) {
       newErrors.cardNumber = "Card number should be 16 digits";
       isErrorFlag = true;
