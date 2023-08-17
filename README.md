@@ -6,10 +6,10 @@ A Credit Card validator system - built with react, typescript, bootstrap, sass, 
 
 ![img](./addcard.png)
 ![img](./bannedcountries.png)
-![img](./homepage)
-![img](./mobileadd)
-![img](./mobilebanned)
-![img](./mobilehome)
+![img](./homepage.png)
+![img](./mobileadd.png)
+![img](./mobilebanned.png)
+![img](./mobilehome.png)
 
 ### Live site
 
